@@ -1,5 +1,5 @@
 <template>
-  <nav :class="{ 'cover-gradient-2' : isScrolled }" class="relative z-10 w-full text-neutral-800 justify-between">
+  <nav :class="{ 'glassmorph' : isScrolled, 'cover-gradient-2' : !isScrolled }" class="relative z-10 w-full text-neutral-800 justify-between">
     <div class="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-2">
       <div class="flex flex-col lg:flex-row space-x-4 xl:space-x-2">
         <div class="w-full flex flex-row items-center justify-between py-2">
@@ -60,12 +60,14 @@ export default {
 
 <style scoped>
 .cover-gradient-2 {
-  background: linear-gradient(
-    169.4deg,
-    rgb(255, 249, 229) -6.01%,
-    rgb(255, 249, 229) 36.87%,
-    rgb(255, 249, 229) 78.04%,
-    rgb(255, 249, 229) 103.77%
-  );
+  background: rgb(239, 245, 251);
+}
+
+.glassmorph {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 </style>

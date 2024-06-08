@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen font-sans antialiased relative">
     <div class="relative">
-      <div class="absolute w-full cover-gradient-2 sm:cover-gradient">
+      <div class="absolute w-full cover-gradient sm:cover-gradient-2">
         <BaseNavbar class="sticky top-0 z-10" />
         <main class="text-neutral-800">
           <Nuxt />
@@ -12,6 +12,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   name: 'DefaultLayout',
@@ -20,27 +21,22 @@ export default {
 
 <style>
 .cover-gradient {
-  background: linear-gradient(
-    169.4deg,
-    rgb(248, 240, 151) -6.01%,
-    rgb(255, 239, 133) 36.87%,
-    rgb(248, 240, 151) 78.04%,
-    rgb(248, 240, 151) 103.77%
-  );
+  background: radial-gradient(circle, #d6eaff, #a0edf1, rgb(255, 255, 255), #eff5fb, #eaf5f1) 50% 100%,
+  conic-gradient(from 45deg at 50% 50%, #333 0deg, #333 180deg);
+  background-size: 100% 50%, auto;
 }
+
 .cover-gradient-2 {
-  background: linear-gradient(
-    169.4deg,
-    rgb(255, 249, 229) -6.01%,
-    rgb(255, 249, 229) 36.87%,
-    rgb(255, 249, 229) 78.04%,
-    rgb(255, 249, 229) 103.77%
-  );
+  background: radial-gradient(circle, #d6eaff, #a0edf1, rgb(255, 255, 255), #eff5fb, #eaf5f1) 50% 100%,
+  conic-gradient(from 45deg at 50% 50%, #333 0deg, #333 180deg);
+  background-size: 100% 50%, auto;
 }
+
 .bg-orange-gradient,
 .text-gradient {
   background: linear-gradient(136.91deg, #e7bc57 -12.5%, #ffbf1c 107.5%);
 }
+
 .text-gradient {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

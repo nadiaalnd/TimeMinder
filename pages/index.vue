@@ -327,5 +327,4 @@ export default {
 .text-about {
   text-align: justify;
 }
-
 </style>

@@ -58,14 +58,11 @@ export default {
 
 <style scoped>
 .cover-gradient-2 {
-  background: linear-gradient(
-    169.4deg,
-    rgb(255, 249, 229) -6.01%,
-    rgb(255, 249, 229) 36.87%,
-    rgb(255, 249, 229) 78.04%,
-    rgb(255, 249, 229) 103.77%
-  );
+  background: radial-gradient(circle, #d6eaff, #a0edf1, rgb(255, 255, 255), #eff5fb, #eaf5f1) 50% 100%,
+  conic-gradient(from 45deg at 50% 50%, #333 0deg, #333 180deg);
+  background-size: 100% 50%, auto;
 }
+
 .text-time-gradient {
   background: rgb(255, 191, 28);
   background: linear-gradient(169.4deg, #ffbf1c -6.01%, #ffb700 36.87%, #f8f097 78.04%, #ffbf1c 103.77%);

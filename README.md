@@ -4,7 +4,7 @@
 
 ```bash
 # clone this repository or click 'use this template' button
-$ git clone https://github.com/nadiaalnd/Time-Minder-Web.git
+$ git clone https://github.com/nadiaalnd/TimeMinder.git
 
 # install dependencies
 $ yarn install
